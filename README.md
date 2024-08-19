@@ -19,3 +19,15 @@ There are only 2 commands
 > $> alaconfig get font
 > family = "Jetbrains Mono"
 > ```
+
+## Progress
+
+| command | status |
+|---------|--------|
+| font    | done   |
+| opacity | done   |
+| size    | done   |
+| blur    | done   |
+| theme   | done   |
+|
+

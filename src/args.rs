@@ -13,17 +13,24 @@ pub struct AlaconfigArgs {
 
 #[derive(Debug, Subcommand)]
 pub enum Config {
+    /// Set a config parameter
     Set(Setter),
+
+    /// Get a config parameter
     Get(Getter),
 }
 
 #[derive(Debug, Args)]
 pub struct Getter {
+    /// Item can currenty be one of `font`, `size`, `opacity`, `theme`, `blur`
     pub item: String,
 }
 
 #[derive(Debug, Args)]
 pub struct Setter {
+    /// Item can currenty be one of `font`, `size`, `opacity`, `theme`, `blur`
     pub item: String,
+
+    /// value to set
     pub value: Vec<String>,
 }

@@ -20,6 +20,7 @@ fn write_file(out: String) {
         fs::write(path, out).expect("Could not write");
     }
 }
+
 fn title(input: String) -> String {
     input
         .split_whitespace()
