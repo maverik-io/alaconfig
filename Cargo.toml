@@ -1,0 +1,17 @@
+[package]
+name = "alaconfig"
+version = "0.1.0"
+edition = "2021"
+authors = ["Joseph Chacko <josephchacko2006@gmail.com>"]
+license = "MIT OR Apache-2.0"
+description = "Alacritty Configurator"
+readme = "README.md"
+homepage = "https://github.com/maverik-io"
+repository = "https://github.com/maverik-io/alaconfig"
+keywords = ["config", "alacritty"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+clap = { version = "4.5.16", features = ["derive"] }
+dirs = "5.0.1"
+
