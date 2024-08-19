@@ -29,5 +29,5 @@ There are only 2 commands
 | size    | done   |
 | blur    | done   |
 | theme   | done   |
-|
+
 
