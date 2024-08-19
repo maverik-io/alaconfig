@@ -8,7 +8,10 @@ cargo install alaconfig
 ## Commands
 There are only 2 commands
 `set` => set a config parameter
-> eg. `alaconfig set font jetbrains mono`
+> eg. 
+> ```
+> $> alaconfig set font jetbrains mono
+> ```
 
 `get` => gets a set config parameter
 > eg.
