@@ -8,17 +8,20 @@ fn write_file(out: String) {
     let path = dirs::home_dir()
         .unwrap()
         .join(".config/alacritty/alacritty.toml");
-    println!("{out}");
-    print!("Write? (y/n):");
-    std::io::stdout().flush().unwrap();
-    let mut confirmation = String::new();
-    std::io::stdin()
-        .read_line(&mut confirmation)
-        .expect("Error reading from input");
-    let confirmation = confirmation.chars().next().unwrap();
-    if confirmation == 'y' {
-        fs::write(path, out).expect("Could not write");
-    }
+    /*
+        println!("{out}");
+        print!("Write? (y/n):");
+        std::io::stdout().flush().unwrap();
+        let mut confirmation = String::new();
+        std::io::stdin()
+            .read_line(&mut confirmation)
+            .expect("Error reading from input");
+        let confirmation = confirmation.chars().next().unwrap();
+        if confirmation == 'y' {
+            fs::write(path, out).expect("Could not write");
+        }
+    */
+    fs::write(path, out).expect("Could not write");
 }
 
 fn title(input: String) -> String {
